@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h3 {
+    @apply mb-8 text-4xl text-gray-600 font-bold md:text-5xl;
+  }
+}
+
+body {
+  background-image: url(../src/images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
