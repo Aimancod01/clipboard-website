@@ -3,205 +3,342 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clipboard-Website</title>
+    <title>LoopStudios</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Roboto:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Josefin+Sans:wght@300&family=Roboto:wght@100&display=swap"
       rel="stylesheet"
     />
+    <script src="./script.js" defer></script>
     <link rel="stylesheet" href="../dist/output.css" />
   </head>
   <body>
     <section id="hero">
-      <div class="max-w-6xl mx-auto text-center mb-40 px-10 pt-16">
-        <img src="images/logo.svg" alt="" class="mx-auto my-16" />
-        <h3>A history of everything you copy</h3>
-        <p class="max-w-3xl mx-auto mb-10 text-2xl text-gray-400">
-          Clipboard always allow you to track and oragnize everything you copy.
-          Instantly access your clipboard on all your devices.
-        </p>
+      <div class="container mx-auto max-w-6xl px-6 py-10">
+        <nav class="flex items-center justify-between font-bold text-white">
+          <img src="../src/images/logo.svg" alt="" />
+          <div class="hidden font-alata h-10 md:flex md:space-x-8">
+            <div class="group">
+              <a href="#">About</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Careers</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Events</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Products</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Support</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+          </div>
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="z-40 block hamburger md:hidden focus:outline-none"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
+
         <div
-          class="flex flex-col justify-center space-y-6 w-full md:flex-row md:space-y-0 md:space-x-6"
+          id="menu"
+          class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
         >
-          <button
-            class="bg-emerald-400 px-8 hover:bg-emerald-500 duration-150 py-4 shadow-lg rounded-full font-bold"
-          >
-            Download for IOS
-          </button>
-          <button
-            class="bg-blue-400 px-8 hover:bg-blue-500 duration-150 py-4 shadow-lg rounded-full font-bold"
-          >
-            Download for Mac
-          </button>
+          <a href="#" class="hover:text-pink-500">About</a>
+          <a href="#" class="hover:text-pink-500">Careers</a>
+          <a href="#" class="hover:text-pink-500">Events</a>
+          <a href="#" class="hover:text-pink-500">Products</a>
+          <a href="#" class="hover:text-pink-500">Support</a>
         </div>
-      </div>
-    </section>
-    <section id="sinppets">
-      <div class="max-w-6xl mx-auto text-center my-10 px-10">
-        <h3>Keep track of your snippets</h3>
-        <p class="max-w-3xl text-center mx-auto text-xl mb-24 text-gray-400">
-          Clipboard instantly stores any item you copy in the cloud, meaning you
-          can access your snippets immediately on all your devices. Our Mac and
-          iOS apps will help you organize everything.
-        </p>
-      </div>
-    </section>
-    <section id="features">
-      <div class="max-w-6xl mx-auto text-center my-20 px-10">
+
         <div
-          class="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6"
+          class="max-w-lg uppercase p-4 font-sans mt-32 mb-32 text-4xl border-2 text-white md:p-10 md:text-6xl"
         >
-          <div class="md:w-1/2">
-            <img src="images/image-computer.png" alt="" class="mb-10" />
-          </div>
-          <div
-            class="flex flex-col space-y-6 mt-10 mb-5 md:pl-16 md:text-left md:w-1/2"
-          >
-            <div>
-              <h5 class="text-2xl font-bold text-gray-500">Quick Search</h5>
-              <p class="max-w-md text-xl text-gray-400">
-                Easily search your snippets by content, category, web address,
-                application, and more.
-              </p>
-            </div>
-            <div>
-              <h5 class="text-2xl font-bold text-gray-500">iCloud Sync</h5>
-              <p class="max-w-md text-xl text-gray-400">
-                Instantly saves and syncs snippets across all your devices.
-              </p>
-            </div>
-            <div>
-              <h5 class="text-2xl font-bold text-gray-500">
-                Completely History
-              </h5>
-              <p class="max-w-md text-xl text-gray-400">
-                Retrieve any snippets from the first moment you started using
-                the app.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="access">
-      <div class="max-w-6xl mx-auto text-center my-20 p-10">
-        <h3>Access Clipboard Anywhere</h3>
-        <p class="max-w-3xl mx-auto text-center text-xl text-gray-400">
-          Whether you’re on the go, or at your computer, you can access all your
-          Clipboard snippets in a few simple clicks.
-        </p>
-        <img src="images/image-devices.png" alt="" class="mx-auto mt-10" />
-      </div>
-    </section>
-    <section>
-      <div class="max-w-6xl mx-auto text-center my-20 px-10">
-        <h3>Supercharge your workflow</h3>
-        <p class="max-w-3xl mx-auto text-xl text-gray-400">
-          We've got the tools to boost your productivity.
-        </p>
-        <div
-          class="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0 md:space-x-8"
-        >
-          <div class="flex flex-col space-y-6 items-center mt-10">
-            <img src="images/icon-blacklist.svg" alt="" class="mb-6" />
-            <h5 class="text-2xl font-bold text-gray-500">Create Blacklists</h5>
-            <p class="max-w-md text-xl text-gray-400">
-              Easily search your snippets by content, category, web address,
-              application, and more.
-            </p>
-          </div>
-          <div class="flex flex-col space-y-6 items-center mt-10">
-            <img src="images/icon-text.svg" alt="" class="mb-6" />
-            <h5 class="text-2xl font-bold text-gray-500">
-              Plain Text Snippets
-            </h5>
-            <p class="max-w-md text-xl text-gray-400">
-              Remove unwanted formatting from copied text for a consistent look.
-            </p>
-          </div>
-          <div class="flex flex-col space-y-6 items-center mt-10">
-            <img src="images/icon-preview.svg" alt="" class="mb-6" />
-            <h5 class="text-2xl font-bold text-gray-500">Sneak Preview</h5>
-            <p class="max-w-md text-xl text-gray-400">
-              Quick preview of all snippets on your Clipboard for easy access.
-            </p>
-          </div>
+          Impressive Experience that Deliever
         </div>
       </div>
     </section>
     <section>
       <div
-        class="max-w-6xl my-20 flex flex-col items-center space-y-16 md:flex-row px-10 justify-between mx-auto md:space-y-0 md:space-x-10"
+        class="relative text-gray-900 container flex flex-col my-32 max-w-6xl px-6 md:px-0 md:flex-row"
       >
-        <img src="images/logo-google.png" alt="" />
-        <img src="images/logo-hp.png" alt="" />
-        <img src="images/logo-microsoft.png" alt="" />
-        <img src="images/logo-ibm.png" alt="" />
-        <img src="images/logo-vector-graphics.png" alt="" />
+        <img src="images/desktop/image-interactive.jpg" alt="" />
+        <div
+          class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
+        >
+          <h2
+            class="max-w-lg text-center font-sans md:text-left text-4xl mt-10 mb-6 text-gray-900 md:text-5xl uppercase"
+          >
+            The leader in interactive VR
+          </h2>
+          <p class="max-w-md">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
       </div>
     </section>
     <section>
-      <div class="max-w-6xl mx-auto text-center mb-40 px-10 pt-16">
-        <h3>Clipboard for iOS and MacOS</h3>
-        <p class="max-w-3xl mx-auto mb-10 text-2xl text-gray-400">
-          Available for free on the App Store. Download for Mac or iOS, sync
-          with iCloud and you're ready to start adding to your clipboard.
-        </p>
+      <div class="container mx-auto max-w-6xl px-6 my-32 text-gray-900">
+        <div class="flex justify-center mb-10 md:justify-between">
+          <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+            Our creations
+          </h2>
+          <button
+            class="hidden px-10 py-3 border-2 border-black uppercase font-alata font-bold hover:bg-black hover:text-white duration-200 md:block tracking-widest"
+          >
+            See All
+          </button>
+        </div>
+        <div
+          class="flex flex-col w-full justify-between text-2xl space-y-6 md:flex-row md:space-y-0 md:space-x-8"
+        >
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-deep-earth.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-deep-earth.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              Deep Earth
+            </h5>
+          </div>
+
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-deep-earth.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-night-arcade.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              Night Arcade
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-soccer-team.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-soccer-team.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              Soccer Team VR
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-grid.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-grid.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              The Grid
+            </h5>
+          </div>
+        </div>
 
         <div
-          class="flex flex-col justify-center space-y-6 w-full md:flex-row md:space-y-0 md:space-x-6"
+          class="flex flex-col w-full justify-between text-2xl space-y-6 mt-5 md:flex-row md:space-y-0 md:space-x-8"
         >
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-from-above.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-from-above.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              From Up Above VR
+            </h5>
+          </div>
+
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-pocket-borealis.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-pocket-borealis.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              Pocket Borealis
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-curiosity.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-curiosity.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              The Curiosity
+            </h5>
+          </div>
+          <div class="group relative overflow-hidden md:w-1/4">
+            <img
+              class="hidden md:block w-full duration-200 group-hover:scale-110"
+              src="images/desktop/image-fisheye.jpg"
+              alt=""
+            />
+            <img
+              class="md:hidden w-full duration-200 group-hover:scale-110"
+              src="images/mobile/image-fisheye.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:opacity-70 group-hover:from-gray-50 group-hover:to-white"
+            ></div>
+            <h5
+              class="absolute bottom-4 duration-200 group-hover:scale-110 w-52 px-6 text-white md:bottom-8 md:px-10 group-hover:text-black"
+            >
+              Make it Fisheye
+            </h5>
+          </div>
+        </div>
+        <div class="flex justify-center mt-10 md:hidden">
           <button
-            class="bg-emerald-400 px-8 hover:bg-emerald-500 duration-150 py-4 shadow-lg rounded-full font-bold"
+            class="px-10 py-3 border-2 border-black uppercase font-alata font-bold hover:bg-black hover:text-white duration-200 tracking-widest w-full md:hidden"
           >
-            Download for IOS
-          </button>
-          <button
-            class="bg-blue-400 px-8 hover:bg-blue-500 duration-150 py-4 shadow-lg rounded-full font-bold"
-          >
-            Download for Mac
+            See All
           </button>
         </div>
       </div>
     </section>
-    <footer class="bg-gray-50">
-      <div class="max-w-6xl mx-auto text-center mt-20 px-10">
-        <div
-          class="flex flex-col space-y-3 items-center justify-between md:flex-row"
-        >
-          <img src="images/logo.svg" class="scale-50" alt="" />
-          <a href="#" class="text-gray-400 hover:text-emerald-400">FAQs</a>
-          <a href="#" class="text-gray-400 hover:text-emerald-400"
-            >Contact Us</a
-          >
-          <a href="#" class="text-gray-400 hover:text-emerald-400"
-            >Privacy Policy</a
-          >
-          <a href="#" class="text-gray-400 hover:text-emerald-400">Press Kit</a>
-          <a href="#" class="text-gray-400 hover:text-emerald-400"
-            >Install Guide</a
-          >
-        </div>
-        <div class="flex items-center justify-center space-x-5 m-4">
-          <a
-            href=""
-            class="hover:shadow-emerald-400 hover:shadow-lg duration-150"
-          >
+    <footer class="bg-black">
+      <div class="max-w-6xl mx-auto px-6 py-10">
+        <div class="flex flex-col items-center space-y-6">
+          <img src="../src/images/logo.svg" alt="" class="w-32" />
+          <div class="font-alata text-white h-10 flex space-x-8">
+            <div class="group">
+              <a href="#">About</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Careers</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Events</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Products</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+            <div class="group">
+              <a href="#">Support</a>
+              <div
+                class="duration-200 group-hover:border-b mx-2 group-hover:border-blue-100"
+              ></div>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-4">
             <img src="images/icon-facebook.svg" alt="" />
-          </a>
-          <a
-            href=""
-            class="hover:shadow-emerald-400 hover:shadow-lg duration-150"
-          >
             <img src="images/icon-instagram.svg" alt="" />
-          </a>
-          <a
-            href=""
-            class="hover:shadow-emerald-400 hover:shadow-lg duration-150"
-          >
+            <img src="images/icon-pinterest.svg" alt="" />
             <img src="images/icon-twitter.svg" alt="" />
-          </a>
+          </div>
+          <div class="text-gray-400 font-medium">
+            <p>© 2022 Loopstudios. All Rights Reserved</p>
+          </div>
         </div>
       </div>
     </footer>
