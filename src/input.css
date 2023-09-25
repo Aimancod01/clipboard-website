@@ -2,14 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  h3 {
-    @apply mb-8 text-4xl text-gray-600 font-bold md:text-5xl;
-  }
+#hero {
+  background-image: url(../src/images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-body {
-  background-image: url(../src/images/bg-header-desktop.png);
-  background-repeat: no-repeat;
-  background-size: contain;
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  height: 2px;
+  width: 24px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }

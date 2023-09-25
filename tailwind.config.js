@@ -10,7 +10,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Bai Jamjuree", "sans-serif"],
+        sans: ["Josefin Sans", "sans-serif"],
+        alata: ["Alata"],
       },
     },
   },
